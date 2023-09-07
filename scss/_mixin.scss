@@ -1,0 +1,14 @@
+
+
+
+@mixin dimenciones($ancho, $altura){
+    width: $ancho;
+    height: $altura;
+}
+
+
+@mixin flex{
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+}

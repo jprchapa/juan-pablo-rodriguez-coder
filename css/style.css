@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+}
+main h2, main h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 35px;
+}
+
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+}
+.logo {
+  width: 60px;
+  height: auto;
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.redes {
+  width: 40px;
+  margin: 10px;
+}
+
+.twitter {
+  width: 50px;
+  margin: 10px;
+}
+
+.iconos {
+  width: 60px;
+  margin: auto;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../multimedia/fondo/5594016.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header nav .container-fluid {
+  background-color: #007a21;
+  padding: 30px 2vw;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 30px;
+}
+header nav .costaazul {
+  font-size: 45px;
+  text-decoration: none;
+  color: white;
+}
+header nav .dropdown-item {
+  font-size: 20px;
+}
+header nav .dropdown-item:hover {
+  background-color: rgb(20, 20, 133);
+  border-radius: 3px;
+  color: white;
+}
+header nav .nav-item {
+  margin-left: 2rem;
+}
+header nav .nav-item:hover {
+  background-color: rgb(20, 20, 133);
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 1320px) {
+  header nav .container-fluid {
+    font-size: 25px;
+  }
+  header nav .costaazul {
+    font-size: 35px;
+  }
+  header nav .nav-item {
+    margin-left: 5px;
+  }
+}
+@media screen and (max-width: 600px) {
+  header nav div a {
+    margin: auto;
+  }
+  header nav div a .texto-logo {
+    display: none;
+  }
+}
+main .imagen {
+  width: 45%;
+  height: auto;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+}
+main article {
+  width: 50%;
+  height: auto;
+  color: rgb(20, 20, 133);
+  margin: auto;
+  padding: 40px;
+}
+
+@media screen and (max-width: 1320px) {
+  main .imagen {
+    width: 60%;
+    height: auto;
+  }
+  main article {
+    width: 60%;
+    height: auto;
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  main .imagen {
+    width: 80%;
+    height: auto;
+  }
+  main article {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+  }
+}
+main h1 {
+  background-color: #007a21;
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+}
+main h2 {
+  color: rgb(20, 20, 133);
+  text-decoration: underline;
+}
+
+main .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 30px 10vw;
+}
+main .grid-container .card {
+  border: 1px solid rgb(20, 20, 133);
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(20, 20, 133, 0.4);
+}
+main .grid-container .card img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin: auto;
+}
+main .grid-container .card h2 {
+  margin: 5px;
+}
+main .grid-container .card p {
+  margin: 10px 20px;
+}
+main .grid-container .card p.full-width {
+  width: 100%;
+  margin: 10px 0;
+}
+main .grid-container #inicios, main .grid-container #patin {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+main .grid-container #inicios h2, main .grid-container #inicios p, main .grid-container #patin h2, main .grid-container #patin p {
+  grid-column: span 3;
+  margin: 0;
+}
+
+@media screen and (max-width: 1320px) {
+  main .grid-container {
+    grid-template-columns: 1fr;
+    margin: 15px;
+    gap: 15px;
+  }
+  main .grid-container .card {
+    width: 100%;
+  }
+  main .grid-container .card img {
+    max-height: 400px;
+  }
+  main .grid-container #inicios, main .grid-container #patin {
+    grid-column: unset;
+  }
+}
+main .asociate {
+  max-width: 900px;
+  margin: auto;
+  padding: 35px;
+}
+main .carnet {
+  width: 430px;
+  height: 320px;
+  margin: auto;
+}
+main .carnet .frente {
+  text-align: center;
+  border: 2px solid rgb(20, 20, 133);
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 2px rgba(20, 20, 133, 0.4);
+  background-color: white;
+}
+main .carnet .frente h3 {
+  font-size: 1.5rem;
+}
+main .carnet .frente .carnet-contenedor {
+  display: flex;
+}
+main .carnet .frente .carnet-contenedor .info p {
+  text-align: left;
+  font-size: 1rem;
+  margin: 0;
+  margin-left: 15px;
+}
+main .carnet .frente .carnet-contenedor .foto {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .carnet .frente .carnet-contenedor .foto img {
+  max-width: 80px;
+  height: auto;
+}
+
+/*main contactos*/
+.contenedor {
+  display: flex;
+  justify-content: center;
+}
+
+.formulario {
+  width: 30%;
+  height: auto;
+  background-color: #007a21;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+  box-shadow: 0px 0px 8px rgba(25, 135, 84, 0.6);
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+textarea {
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid rgb(20, 20, 133);
+  border-radius: 5px;
+}
+
+input[type=checkbox] {
+  margin-right: 5px;
+}
+
+input[type=submit] {
+  background-color: rgba(8, 66, 39, 0.8);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 50%;
+  margin: auto;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(20, 20, 133);
+}
+
+/* Estilos para contacto */
+.contactos {
+  width: 30%;
+  height: auto;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  padding: 0px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  margin-right: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contactos .contacto-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+@media screen and (max-width: 1320px) {
+  .contenedor {
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+  .contactos {
+    min-width: 450px;
+    margin: auto;
+    margin-top: 30px;
+    min-height: 500px;
+  }
+  .formulario {
+    min-width: 450px;
+    margin: auto;
+  }
+}
+main .institucional {
+  max-width: 900px;
+  margin: auto;
+  padding: 35px;
+}
+main .institucional section h2 {
+  text-align: center;
+  margin: 50px;
+}
+main .institucional table {
+  border: 4px solid #007a21;
+  width: 100%;
+  margin: 0;
+  box-shadow: 1px 5px 5px rgba(25, 135, 84, 0.6);
+}
+main .institucional table th, main .institucional table td {
+  border: 2px solid #007a21;
+  padding: 8px;
+  text-align: center;
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  color: #007a21;
+  background-color: #33ad54;
+  color: rgb(20, 20, 133);
+}
+footer h4 a {
+  color: rgb(20, 20, 133);
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */
